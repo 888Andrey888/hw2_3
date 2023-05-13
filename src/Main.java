@@ -4,7 +4,7 @@ public class Main {
         bankAccount.deposit(20000);
 
         while (true) {
-            System.out.println(bankAccount.getAmount());
+            System.out.println("У вас на счете " + bankAccount.getAmount());
             try {
                 bankAccount.withDraw(6000);
             } catch (LimitException e) {
